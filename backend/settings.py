@@ -57,9 +57,15 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://your-frontend-name.onrender.com",
-     "http://localhost:3000",
+    "https://djeact-frontend-name.onrender.com",
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://djeact-frontend.onrender.com",
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 ROOT_URLCONF = 'backend.urls'
 
